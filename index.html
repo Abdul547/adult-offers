@@ -1,107 +1,874 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-    <title>18+ Exclusive Content</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Income Sources | Build Your Online Income Portfolio</title>
+    <meta name="description" content="Discover 100+ verified digital income sources. Compare affiliate programs, commission rates, and build your perfect income portfolio. Start earning online today.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/digital-income-sources/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/digital-income-sources/">
+    <meta property="og:title" content="Digital Income Sources | Build Your Online Income Portfolio">
+    <meta property="og:description" content="Discover 100+ verified digital income sources. Compare affiliate programs, commission rates, and build your perfect income portfolio.">
+    <meta property="og:image" content="https://yourusername.github.io/digital-income-sources/assets/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/digital-income-sources/">
+    <meta property="twitter:title" content="Digital Income Sources | Build Your Online Income Portfolio">
+    <meta property="twitter:description" content="Discover 100+ verified digital income sources. Compare affiliate programs, commission rates, and build your perfect income portfolio.">
+    <meta property="twitter:image" content="https://yourusername.github.io/digital-income-sources/assets/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Digital Income Sources",
+        "description": "Comprehensive directory of verified digital income opportunities and affiliate programs",
+        "url": "https://yourusername.github.io/digital-income-sources/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://yourusername.github.io/digital-income-sources/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- CSS -->
     <style>
-        /* Age verification overlay */
-        #ageVerify {
-            position: fixed;
+        /* CSS Variables for easy theming */
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --gray: #6b7280;
+            --border: #e5e7eb;
+            --shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --radius: 8px;
+        }
+        
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        a:hover {
+            color: var(--primary-dark);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: white;
+            box-shadow: var(--shadow);
+            position: sticky;
             top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000;
-            color: white;
-            z-index: 9999;
-            text-align: center;
-            padding-top: 100px;
+            z-index: 100;
         }
-        .warning {
-            color: red;
-            font-size: 1.5em;
-            margin: 20px 0;
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
         }
-        .age-btn {
-            padding: 10px 30px;
-            margin: 10px;
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo-icon {
+            color: var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            font-weight: 500;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
             border: none;
+            font-size: 1.5rem;
             cursor: pointer;
-            font-size: 1em;
         }
-        .enter-btn {
-            background: green;
-            color: white;
-        }
-        .exit-btn {
-            background: red;
+        
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
         
-        /* Main content (hidden until verified) */
-        #mainContent {
-            display: none;
-            background: #222;
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--secondary);
             color: white;
-            padding: 20px;
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            color: white;
+        }
+        
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+            background: white;
+        }
+        
+        .stat-card {
             text-align: center;
         }
-        .adult-btn {
-            background: #ff0066;
-            color: white;
-            padding: 15px 40px;
-            margin: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
+        
+        .stat-number {
+            font-size: 2.5rem;
             font-weight: bold;
+            color: var(--primary);
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Categories Section */
+        .categories {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-card h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-count {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Featured Income Sources */
+        .featured {
+            background: #f8fafc;
+            padding: 4rem 0;
+        }
+        
+        .income-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .income-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .income-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .income-header {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+        
+        .income-header h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .income-type {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+        
+        .income-body {
+            padding: 1.5rem;
+        }
+        
+        .income-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            display: block;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+        
+        .income-description {
+            color: var(--gray);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .affiliate-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem;
+            border-radius: var(--radius);
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+        
+        .affiliate-button:hover {
+            background: var(--primary-dark);
+        }
+        
+        /* Income Calculator */
+        .calculator {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .calculator-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .calculator-input {
+            margin-bottom: 1.5rem;
+        }
+        
+        .calculator-input label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .calculator-input input,
+        .calculator-input select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+        
+        .calculator-results {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .result-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Disclosure */
+        .disclosure {
+            background: #fff8e1;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin: 2rem 0;
+            border-left: 4px solid #ffb300;
+        }
+        
+        .disclosure h4 {
+            margin-bottom: 0.5rem;
+            color: #5d4037;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h4 {
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #d1d5db;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .no-print {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- AGE VERIFICATION SCREEN -->
-    <div id="ageVerify">
-        <h1>⚠️ ADULT CONTENT WARNING ⚠️</h1>
-        <p class="warning">You must be 18+ years old to enter</p>
-        <p>This site contains adult material intended for legal adults only</p>
-        <p>By entering, you confirm you are at least 18 years old</p>
-        <br>
-        <button class="age-btn enter-btn" onclick="enterSite()">I AM 18+ - ENTER</button>
-        <button class="age-btn exit-btn" onclick="exitSite()">EXIT - I AM UNDER 18</button>
-        <p style="margin-top: 30px; font-size: 0.8em;">Access restricted to adults only</p>
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <span class="logo-icon">💰</span>
+                <span>Digital Income Sources</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#featured">Top Programs</a></li>
+                    <li><a href="#calculator">Income Calculator</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Build Your Digital Income Portfolio</h1>
+            <p>Discover 100+ verified income sources, compare commission rates, and create sustainable online revenue streams. Start with $0 investment.</p>
+            <a href="#categories" class="cta-button">Explore Income Sources →</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-card">
+                <span class="stat-number" id="total-sources">127</span>
+                <span class="stat-label">Verified Income Sources</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">$5M+</span>
+                <span class="stat-label">Total Commissions Paid</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="recurring-count">43</span>
+                <span class="stat-label">Recurring Programs</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Free to Start</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Income Categories</h2>
+                <p>Browse income sources by category. Each program is verified and includes detailed commission information.</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="/insurance" class="category-card">
+                    <div class="category-icon">🛡️</div>
+                    <h3>Insurance</h3>
+                    <p>Life, health, auto & business insurance affiliate programs</p>
+                    <div class="category-count">24 programs</div>
+                </a>
+                
+                <a href="/tech-tools" class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Tech Tools</h3>
+                    <p>SaaS, developer tools, and software commissions</p>
+                    <div class="category-count">38 programs</div>
+                </a>
+                
+                <a href="/hosting-cloud" class="category-card">
+                    <div class="category-icon">☁️</div>
+                    <h3>Hosting & Cloud</h3>
+                    <p>Web hosting, VPN, and cloud service referrals</p>
+                    <div class="category-count">19 programs</div>
+                </a>
+                
+                <a href="/education" class="category-card">
+                    <div class="category-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>Course platforms, certifications, and eBooks</p>
+                    <div class="category-count">27 programs</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Income Sources -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top Performing Income Sources</h2>
+                <p>These programs consistently offer high commissions and reliable payouts</p>
+            </div>
+            
+            <div class="income-grid">
+                <!-- Income Card 1 -->
+                <div class="income-card">
+                    <div class="income-header">
+                        <h3>Web Hosting Pro</h3>
+                        <div class="income-type">Hosting & Cloud • Recurring</div>
+                    </div>
+                    <div class="income-body">
+                        <div class="income-stats">
+                            <div class="stat">
+                                <span class="stat-value">$65+</span>
+                                <span class="stat-label">per sale</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">30%</span>
+                                <span class="stat-label">recurring</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">90 days</span>
+                                <span class="stat-label">cookie</span>
+                            </div>
+                        </div>
+                        <p class="income-description">Premium web hosting with high conversion rates and excellent support for affiliates.</p>
+                        <a href="[YOUR_AFFILIATE_LINK]" class="affiliate-button" rel="nofollow sponsored">View Program Details →</a>
+                    </div>
+                </div>
+                
+                <!-- Income Card 2 -->
+                <div class="income-card">
+                    <div class="income-header">
+                        <h3>Term Life Insurance</h3>
+                        <div class="income-type">Insurance • High Ticket</div>
+                    </div>
+                    <div class="income-body">
+                        <div class="income-stats">
+                            <div class="stat">
+                                <span class="stat-value">$200-500</span>
+                                <span class="stat-label">per lead</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">High</span>
+                                <span class="stat-label">conversion</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">45 days</span>
+                                <span class="stat-label">cookie</span>
+                            </div>
+                        </div>
+                        <p class="income-description">Top-paying life insurance affiliate program with dedicated affiliate support.</p>
+                        <a href="[YOUR_AFFILIATE_LINK]" class="affiliate-button" rel="nofollow sponsored">View Program Details →</a>
+                    </div>
+                </div>
+                
+                <!-- Income Card 3 -->
+                <div class="income-card">
+                    <div class="income-header">
+                        <h3>AI Tools Suite</h3>
+                        <div class="income-type">Tech Tools • Trending</div>
+                    </div>
+                    <div class="income-body">
+                        <div class="income-stats">
+                            <div class="stat">
+                                <span class="stat-value">40%</span>
+                                <span class="stat-label">commission</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Monthly</span>
+                                <span class="stat-label">payouts</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">60 days</span>
+                                <span class="stat-label">cookie</span>
+                            </div>
+                        </div>
+                        <p class="income-description">AI tool suite with high monthly recurring revenue potential for affiliates.</p>
+                        <a href="[YOUR_AFFILIATE_LINK]" class="affiliate-button" rel="nofollow sponsored">View Program Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Income Calculator -->
+    <section id="calculator" class="calculator">
+        <div class="container">
+            <div class="section-title">
+                <h2>Income Potential Calculator</h2>
+                <p>Estimate your potential earnings based on traffic and conversion rates</p>
+            </div>
+            
+            <div class="calculator-container">
+                <div class="calculator-input">
+                    <label for="monthly-visitors">Monthly Visitors</label>
+                    <input type="range" id="monthly-visitors" min="1000" max="100000" value="10000" step="1000">
+                    <span id="visitors-value">10,000</span>
+                </div>
+                
+                <div class="calculator-input">
+                    <label for="conversion-rate">Conversion Rate (%)</label>
+                    <input type="range" id="conversion-rate" min="0.1" max="5" value="1" step="0.1">
+                    <span id="conversion-value">1%</span>
+                </div>
+                
+                <div class="calculator-input">
+                    <label for="avg-commission">Average Commission per Conversion</label>
+                    <select id="avg-commission">
+                        <option value="50">$50 (Standard)</option>
+                        <option value="100">$100 (Premium)</option>
+                        <option value="200">$200 (High Ticket)</option>
+                        <option value="30">$30/mo (Recurring)</option>
+                    </select>
+                </div>
+                
+                <div class="calculator-results">
+                    <div class="result-number" id="monthly-income">$5,000</div>
+                    <p>Estimated Monthly Income</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclosure -->
+    <div class="container">
+        <div class="disclosure">
+            <h4>Affiliate Disclosure</h4>
+            <p>This site contains affiliate links. We may earn a commission when you make a purchase through our links. This comes at no extra cost to you and helps support our research. We only recommend products and services we have personally reviewed or believe will add value to our readers.</p>
+        </div>
     </div>
-    
-    <!-- MAIN ADULT CONTENT -->
-    <div id="mainContent">
-        <h1>🔥 Exclusive Adult Offers 🔥</h1>
-        <p>Click below for special adult-only content:</p>
-        
-        <!-- USE YOUR ADULT SMARTLINK HERE -->
-        <a href="https://adrenalinemanipulativeact.com/iqv24nqx0n?key=fb81bc07abe0c48eb92f014ac7607e1f" class="adult-btn">
-            👉 Access Adult Content Now 👈
-        </a>
-        
-        <p style="margin-top: 30px; color: #aaa;">
-            ⚠️ 18+ Only | Privacy Protected | Secure Connection
-        </p>
-    </div>
-    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Digital Income Sources</h4>
+                    <p>Your comprehensive guide to building sustainable online income through affiliate marketing and digital products.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/insurance">Insurance Programs</a></li>
+                        <li><a href="/tech-tools">Tech Tools</a></li>
+                        <li><a href="/hosting-cloud">Hosting & Cloud</a></li>
+                        <li><a href="/education">Education</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/getting-started">Getting Started Guide</a></li>
+                        <li><a href="/blog">Blog & Updates</a></li>
+                        <li><a href="/tools">Free Tools</a></li>
+                        <li><a href="/success-stories">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/disclaimer">Full Disclaimer</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="current-year">2024</span> Digital Income Sources. All information is provided for educational purposes only.</p>
+                <p class="no-print">This site is hosted on GitHub Pages.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
-        function enterSite() {
-            if(confirm("By clicking OK, you confirm you are 18+ years old")) {
-                document.getElementById('ageVerify').style.display = 'none';
-                document.getElementById('mainContent').style.display = 'block';
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Income Calculator
+        const visitorsSlider = document.getElementById('monthly-visitors');
+        const conversionSlider = document.getElementById('conversion-rate');
+        const commissionSelect = document.getElementById('avg-commission');
+        const monthlyIncome = document.getElementById('monthly-income');
+        const visitorsValue = document.getElementById('visitors-value');
+        const conversionValue = document.getElementById('conversion-value');
+
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function calculateIncome() {
+            const visitors = parseInt(visitorsSlider.value);
+            const conversion = parseFloat(conversionSlider.value);
+            const commission = parseFloat(commissionSelect.value);
+            
+            const conversions = visitors * (conversion / 100);
+            const income = conversions * commission;
+            
+            visitorsValue.textContent = formatNumber(visitors);
+            conversionValue.textContent = conversion.toFixed(1) + '%';
+            monthlyIncome.textContent = '$' + formatNumber(Math.round(income));
+        }
+
+        visitorsSlider.addEventListener('input', calculateIncome);
+        conversionSlider.addEventListener('input', calculateIncome);
+        commissionSelect.addEventListener('change', calculateIncome);
+
+        // Initialize calculator
+        calculateIncome();
+
+        // Update current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Animated counter for stats
+        function animateCounter(elementId, finalValue, duration = 2000) {
+            let current = 0;
+            const increment = finalValue / (duration / 16); // 60fps
+            const element = document.getElementById(elementId);
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= finalValue) {
+                    element.textContent = finalValue;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Start counters when in viewport
+        function startCounters() {
+            animateCounter('total-sources', 127);
+            animateCounter('recurring-count', 43);
+        }
+
+        // Simple viewport check (you might want to use Intersection Observer for production)
+        window.addEventListener('load', startCounters);
+
+        // Print functionality
+        window.addEventListener('beforeprint', () => {
+            document.querySelectorAll('.no-print').forEach(el => {
+                el.style.display = 'none';
+            });
+        });
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Schema.org for featured items
+        const featuredItems = [
+            {
+                "@type": "Product",
+                "name": "Web Hosting Pro Affiliate Program",
+                "description": "Premium web hosting affiliate program with high commissions",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "65",
+                    "priceCurrency": "USD"
+                }
             }
-        }
-        
-        function exitSite() {
-            window.location.href = 'https://www.google.com';
-        }
-        
-        // Optional: Set cookie to remember verification
-        function setAgeCookie() {
-            document.cookie = "adult_verified=true; max-age=86400; path=/";
-        }
+        ];
     </script>
 </body>
 </html>
